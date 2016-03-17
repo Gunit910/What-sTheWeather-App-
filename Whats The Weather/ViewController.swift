@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet var resultLabel: UILabel!
     
     
+   
+    
     @IBAction func findWeather(sender: AnyObject) {
         
         var wasSuccessful = false
@@ -85,11 +87,11 @@ class ViewController: UIViewController {
     
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        resultLabel.layer.borderWidth = 2.0
+        resultLabel.layer.cornerRadius = 8
             }
 
     override func didReceiveMemoryWarning() {
